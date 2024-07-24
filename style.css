@@ -94,11 +94,6 @@ header {
     color: #fff;
 }
 
-/* .fa-xmark{
-    display: none;
-    font-size: 24px;
-    cursor: pointer;
-} */
 
 /* Mobile Styles */
 @media (max-width: 768px) {
@@ -124,6 +119,10 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    }
+
+    .nav-links li{
+        margin-top: 10px;
     }
 
     
