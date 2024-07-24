@@ -13,6 +13,7 @@ body {
 
     font-family: Arial, sans-serif;
    background-color: #1e283b;
+   color: #fff;
 }
 
 
@@ -95,6 +96,144 @@ header {
 }
 
 
+
+/* Intro styling */
+
+
+.intro-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+    color: white;
+    overflow: hidden;
+}
+hr{
+    color: grey;
+}
+
+.intro-text {
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+    animation: fadeInLeft 1s ease-in-out;
+}
+
+.intro-text h1 {
+    margin: 0;
+    text-shadow: 
+        -1px -1px 0 #000,  
+         1px -1px 0 #000,
+        -1px  1px 0 #000,
+         1px  1px 0 #000;
+}
+
+.intro-gif {
+    flex: 1;
+    text-align: center;
+    animation: fadeInRight 1s ease-in-out;
+}
+
+.intro-gif img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+
+.intro-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    color: white;
+    overflow: hidden;
+}
+
+.intro-text {
+    text-align: center;
+    padding: 20px;
+    font-size: 2rem;
+    text-shadow: 
+        -1px -1px 0 #000,  
+         1px -1px 0 #000,
+        -1px  1px 0 #000,
+         1px  1px 0 #000;
+    white-space: nowrap;
+}
+#animated-text{
+    margin-top: 30px;
+}
+.color{
+    color: #E7CF75;
+}
+
+.intro-text .fs-1{
+    font-size: 2.5rem;
+}
+
+.intro-text .fs-3{
+    font-size: 3rem;
+}
+
+.intro-text .fs-2{
+    font-size:2.2rem ;
+}
+
+.mt-2{
+    margin-top: 30px;
+}
+/* Animations */
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+@keyframes blink-caret {
+    from, to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: white;
+    }
+}
+
+.fs-1{
+    font-size: 10px;
+}
+
+.intro-text{
+    margin: 20vh;
+}
+
+.intro-section{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.intro-gif img{
+width: 70%;
+position: static;
+}
 /* Mobile Styles */
 @media (max-width: 768px) {
     .nav-links {
@@ -124,6 +263,19 @@ header {
     .nav-links li{
         margin-top: 10px;
     }
+
+
+    .intro-text .fs-1{
+    font-size: 1.9rem;
+}
+
+.intro-text .fs-3{
+    font-size: 2.5rem;
+}
+
+.intro-text .fs-2{
+    font-size:1.8rem ;
+}
 
     
 } 
