@@ -112,65 +112,54 @@ hr{
     color: grey;
 }
 
-.intro-text {
-    flex: 1;
+.intro-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100vh;
     text-align: center;
+    background-color:transparent;
     padding: 20px;
-    animation: fadeInLeft 1s ease-in-out;
+}
+
+.intro-text {
+    animation: fadeIn 2s ease-in-out;
+    margin-bottom: 20px;
+    
 }
 
 .intro-text h1 {
     margin: 0;
-    text-shadow: 
-        -1px -1px 0 #000,  
-         1px -1px 0 #000,
-        -1px  1px 0 #000,
-         1px  1px 0 #000;
-}
-
-.intro-gif {
-    flex: 1;
-    text-align: center;
-    animation: fadeInRight 1s ease-in-out;
+    line-height: 1.2;
 }
 
 .intro-gif img {
     max-width: 100%;
     height: auto;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    animation: bounce 4s infinite;
 }
-
-
-.intro-section {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 80vh;
-    color: white;
-    overflow: hidden;
-}
-
 .intro-text {
     text-align: center;
     padding: 20px;
     font-size: 2rem;
     text-shadow: 
-        -1px -1px 0 #000,  
-         1px -1px 0 #000,
-        -1px  1px 0 #000,
-         1px  1px 0 #000;
+        -1px -1px 0 #000000,  
+         1px -1px 0 #000000,
+        -1px  1px 0 #000000,
+         1px  1px 0 #000000;
     white-space: nowrap;
 }
 #animated-text{
-    margin-top: 30px;
+    margin-top: 60px;
 }
 .color{
     color: #E7CF75;
 }
 
 .intro-text .fs-1{
-    font-size: 2.5rem;
+    font-size: 1.8rem;
 }
 
 .intro-text .fs-3{
@@ -181,41 +170,61 @@ hr{
     font-size:2.2rem ;
 }
 
-.mt-2{
-    margin-top: 30px;
+
+.intro-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
 }
-/* Animations */
-@keyframes fadeInLeft {
+
+.intro-text {
+  margin-bottom: 20px;
+}
+
+.intro-image img {
+  width: 100%;
+  max-width: 300px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.intro-image img:hover {
+  transform: scale(1.1);
+}
+
+
+
+
+
+
+
+
+
+/*Animations */
+
+
+@keyframes fadeIn {
     from {
         opacity: 0;
-        transform: translateX(-50px);
     }
     to {
         opacity: 1;
-        transform: translateX(0);
-    }
-}
-
-@keyframes fadeInRight {
-    from {
-        opacity: 0;
-        transform: translateX(50px);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0);
     }
 }
 
 
-@keyframes blink-caret {
-    from, to {
-        border-color: transparent;
+
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
     }
     50% {
-        border-color: white;
+        transform: translateY(-20px);
     }
 }
+
 
 .fs-1{
     font-size: 10px;
@@ -230,10 +239,6 @@ hr{
     flex-wrap: wrap;
 }
 
-.intro-gif img{
-width: 70%;
-position: static;
-}
 /* Mobile Styles */
 @media (max-width: 768px) {
     .nav-links {
@@ -266,7 +271,7 @@ position: static;
 
 
     .intro-text .fs-1{
-    font-size: 1.9rem;
+    font-size: 1.4rem;
 }
 
 .intro-text .fs-3{
@@ -276,6 +281,20 @@ position: static;
 .intro-text .fs-2{
     font-size:1.8rem ;
 }
+
+ .intro-section {
+        flex-direction: row;
+        text-align: left;
+    }
+
+    .intro-text, .intro-gif {
+        flex: 1;
+        margin: 10px;
+    }
+
+    .intro-gif {
+        text-align: center;
+    }
 
     
 } 
