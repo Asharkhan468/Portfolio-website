@@ -170,34 +170,68 @@ hr{
     font-size:2.2rem ;
 }
 
-
-.intro-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  padding: 20px;
+.text-center{
+    text-align: center;
 }
 
-.intro-text {
-  margin-bottom: 20px;
+/*Myself Styling CSS*/
+
+.introduction {
+    padding: 50px 20px;
+    background-color:transparent;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    max-width: 1200px;
+    margin: 30px auto;
 }
 
-.intro-image img {
-  width: 100%;
-  max-width: 300px;
-  transition: transform 0.3s ease-in-out;
+.text-center {
+    text-align: center;
 }
 
-.intro-image img:hover {
-  transform: scale(1.1);
+.myself-head {
+    margin-top: 15rem;
+    font-size: 2.5rem;
+    color: white;
 }
 
+.myself-intro {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 1rem;
+    margin-top: 5rem;
+}
 
+.myself-text {
+    flex: 1 1 45%;
+    padding: 20px;
+    max-width: 600px;
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
 
+.myself-image {
+    flex: 1 1 45%;
+    max-width: 400px;
+    margin: 20px;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
+.myself-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
 
-
+.myself-image:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
 
 
 
@@ -271,11 +305,11 @@ hr{
 
 
     .intro-text .fs-1{
-    font-size: 1.4rem;
+    font-size: 1.3rem;
 }
 
 .intro-text .fs-3{
-    font-size: 2.5rem;
+    font-size: 2.3rem;
 }
 
 .intro-text .fs-2{
@@ -296,5 +330,31 @@ hr{
         text-align: center;
     }
 
+
+    /*Let me introduce section */
+
+
+    .myself-head {
+        font-size: 2rem;
+        margin-top: 10rem;
+        color: white;
+    }
+
+    .myself-intro {
+        flex-direction: column;
+        margin: 0 1rem;
+    }
+
+    .myself-text, .myself-image {
+        flex: 1 1 100%;
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .myself-image {
+        margin: 20px 0;
+    }
+}
+
     
-} 
+
