@@ -131,7 +131,7 @@ hr{
 
 .intro-text h1 {
     margin: 0;
-    line-height: 1.2;
+    line-height: 1.3;
 }
 
 .intro-gif img {
@@ -174,16 +174,16 @@ hr{
     text-align: center;
 }
 
-/*Myself Styling CSS*/
+/* Myself Styling CSS*/ 
 
-.introduction {
+ .introduction {
     padding: 50px 20px;
     background-color:transparent;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+     border-radius: 10px;
     max-width: 1200px;
     margin: 30px auto;
-}
+} 
 
 .text-center {
     text-align: center;
@@ -208,8 +208,10 @@ hr{
     flex: 1 1 45%;
     padding: 20px;
     max-width: 600px;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     line-height: 1.6;
+    font-weight: italic;
+
 }
 
 .myself-image {
@@ -349,6 +351,7 @@ hr{
         flex: 1 1 100%;
         max-width: 100%;
         text-align: center;
+        margin-top:3rem;
     }
 
     .myself-image {
