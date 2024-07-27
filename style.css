@@ -178,8 +178,8 @@ hr{
 
  .introduction {
     padding: 50px 20px;
-    background-color:transparent;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    /* background-color:transparent; */
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  */
      border-radius: 10px;
     max-width: 1200px;
     margin: 30px auto;
@@ -234,6 +234,65 @@ hr{
     transform: scale(1.05);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
+
+
+/*social links styling*/
+
+
+.social-media {
+    text-align: center;
+}
+
+.social-media h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    color: #E7CF75;
+}
+
+.social-media p {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    /* color: #555; */
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    margin: 0.5rem;
+    border-radius: 50%;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.icon:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.icon.github { background-color: #333; }
+.icon.github:hover { background-color: #444; }
+
+.icon.twitter { background-color: #1DA1F2; }
+.icon.twitter:hover { background-color: #0d8bf2; }
+
+.icon.linkedin { background-color: #0077B5; }
+.icon.linkedin:hover { background-color: #005f8f; }
+
+.icon.facebook { background-color: #3b5998; }
+.icon.facebook:hover { background-color: #2d4373; }
+
+
 
 
 
@@ -357,6 +416,26 @@ hr{
     .myself-image {
         margin: 20px 0;
     }
+
+
+    /*social link mobile styling*/
+
+
+      .icons {
+        /* flex-direction: column; */
+        justify-content: space-around;
+    }
+    .icon {
+        width: 40px;
+        height: 40px;
+        margin: 0.4rem auto;
+        margin-top:2rem;;
+    }
+
+
+
+
+
 }
 
     
